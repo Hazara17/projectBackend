@@ -1,6 +1,6 @@
 const mongoose=require('mongoose');
 
-const cartSchema=new mangoose.Schema({
+const cartSchema=new mongoose.Schema({
     products:[
         {
             type:mongoose.Schema.ObjectId,
@@ -13,5 +13,5 @@ const cartSchema=new mangoose.Schema({
     }
 )
 
-const Cart=mongoose.model('Cart,cartSchema');
+const Cart=mongoose.model('Cart',cartSchema);
 module.exports={Cart}
