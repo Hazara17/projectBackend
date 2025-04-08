@@ -14,7 +14,7 @@ app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
 
-mongoose.connect('mongodb://127.0.0.1:27017/yashEcommerce')
+mongoose.connect('mongodb+srv://hazarashaikh7860:yMztfDIZWA8kGiAp@cluster0.zo56ckd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
 .then(()=>{
     console.log("db is connected")
 }).catch((error)=>{
